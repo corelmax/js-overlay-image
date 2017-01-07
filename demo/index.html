@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Image Mask Demo</title>
+        <link href="./css/demo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="image-cropper">
+                <div class="cropit-preview">
+                    <div id="overlay" class="overlay"></div>
+                </div>
+
+                <div class="control">                
+                <input type="range" class="cropit-image-zoom-input" />
+                <input type="file" style="display: none" class="cropit-image-input" id="image" accept="image/*" />
+                <button onclick="browse();">Browse Image</button>  
+                </div>          
+            </div>
+
+            <p>
+                <a id="download" download="export.png" style="display: none"></a>
+                <a class="download-btn" href="javascript:;">Download Image</a>
+            </p>
+            <p>
+                <a href="javascript:changeOverlay('img/overlay1.png');">Overlay 1</a> | 
+                <a href="javascript:changeOverlay('img/overlay2.png');">Overlay 2</a>
+            </p>
+        </div>
+
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/cropit/dist/jquery.cropit.js"></script>
+        <script type="text/javascript" src="../src/imageMask.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>

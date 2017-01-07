@@ -1,0 +1,32 @@
+body {
+    background-color: #fbfbfb;
+    padding:20px;
+}
+.wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #dedede;
+    padding: 10px;
+    background: #FFF;
+}
+.cropit-preview {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}   
+.cropit-preview .overlay {
+    position: absolute;
+    top:0px; 
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    pointer-events:none;
+}
+.control {
+    padding: 15px;
+}
